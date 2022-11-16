@@ -9,7 +9,7 @@ spec:
   ports:
     - port: {{ .Values.service.rtsp.port }}
       targetPort: rtsp
-      protocol: tcp
+      protocol: TCP
       name: rtsp
     - port: {{ .Values.service.metrics.port }}
       targetPort: metrics
