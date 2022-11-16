@@ -33,6 +33,10 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          volumeMounts:
+          - name: config
+            mountPath: /
+            readOnly: true  
           ports:
             - name: rtsp
               containerPort: 8554
@@ -68,3 +72,11 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+      volumes:             
+        - name: config
+          configMap:
+            name: {{ include "rtsp-simple-server.fullname" . }}-configmap
+            # An array of keys from the ConfigMap to create as files
+            items:
+            - key: "rtsp-simple-server.yml"
+              path: "rtsp-simple-server.yml"
