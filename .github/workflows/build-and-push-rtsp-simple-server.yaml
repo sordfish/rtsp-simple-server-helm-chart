@@ -33,4 +33,4 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: sordfish/rtsp-simple-server-ubuntu-gstreamer:latest,sordfish/rtsp-simple-server-ubuntu-gstreamer:v0.19.3
+          tags: sordfish/rtsp-simple-server-ubuntu-gstreamer:latest,sordfish/rtsp-simple-server-ubuntu-gstreamer:v0.20.2
