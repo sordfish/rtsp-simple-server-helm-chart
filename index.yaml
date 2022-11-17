@@ -3,6 +3,16 @@ entries:
   rtsp-simple-server:
   - apiVersion: v2
     appVersion: 0.20.2
+    created: "2022-11-17T20:57:20.022101644Z"
+    description: A Helm chart for rtsp-simple-server
+    digest: 1829e61f916b232d4ab1b46dd80f45a8f5c12e44b444969117a8bf36ad61aa41
+    name: rtsp-simple-server
+    type: application
+    urls:
+    - https://github.com/sordfish/rtsp-simple-server-helm-chart/releases/download/rtsp-simple-server-0.1.6/rtsp-simple-server-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
+    appVersion: 0.20.2
     created: "2022-11-16T21:19:49.112297577Z"
     description: A Helm chart for rtsp-simple-server
     digest: bbe7ffe75037168850f0fc9958a4405cf116bc813d5bd0da99fd42f67af541c6
@@ -31,4 +41,4 @@ entries:
     urls:
     - https://github.com/sordfish/rtsp-simple-server-helm-chart/releases/download/rtsp-simple-server-0.1.3/rtsp-simple-server-0.1.3.tgz
     version: 0.1.3
-generated: "2022-11-16T21:19:49.112316877Z"
+generated: "2022-11-17T20:57:20.022121144Z"
