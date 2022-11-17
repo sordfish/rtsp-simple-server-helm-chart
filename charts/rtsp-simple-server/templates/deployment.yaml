@@ -35,8 +35,7 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           volumeMounts:
           - name: config
-            mountPath: /app
-            readOnly: true  
+            mountPath: /app/
           ports:
             - name: rtsp
               containerPort: 8554
